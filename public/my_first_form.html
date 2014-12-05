@@ -3,20 +3,41 @@
 	<head>
 	</head>
 	<body>
+		<h1>User Login</h1>
 		<form method="POST" action="http://requestb.in/1m8t6ez1">
-    <p>
-        <label for="username">Username</label>
-        <input id="username" name="username" type="text" placeholder="Type your Username">
-    </p>
-    <p>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="Enter your Password">
+		    <p>
+		        <label for="username">Username</label>
+		        <input id="username" name="username" type="text" placeholder="Type your Username">
+		    </p>
+		    <p>
+		        <label for="password">Password</label>
+		        <input id="password" name="password" type="password" placeholder="Enter your Password">
 
-    </p>
-    <p>
-        <button type="submit" name="submit" value="Login">Login</button>
-    </p>
-</form>
-
+		    </p>
+		    <p>
+		        <button type="submit" name="submit" value="Login">Login</button>
+		    </p>
+		</form>
+		<h1>Compose an Email</h1>
+		<form method="POST" action="http://requestb.in/1m8t6ez1">
+			<p>
+				<label for="sender">From</label>
+				<input id="email_Send" name="sender" type="text" value="paulqlove@gmail.com">
+			</p>
+			<p>
+				<label for="reciever">To</label>
+				<input id="email_Recieve" name="reciever" type="text" placeholder="email">	
+			</p>
+			<p>
+				<label for="subject">Subject</label>
+				<input id="email_Subject" name="subject" type="text" placeholder="subject">
+			</p>
+			<p>
+				<textarea id="email_Body" name="email_body" placeholder="Body" rows="5" cols="25"></textarea>
+			</p>
+			<p>
+				<button type="Submit" name="submit" value="send" >Send</button>
+			</p>
+		</form>
 	</body>
 </html>
