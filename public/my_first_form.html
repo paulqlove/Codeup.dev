@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<h1>User Login</h1>
-		<form method="POST" action="http://requestb.in/1m8t6ez1">
+		<form method="POST" action="http://requestb.in/17lwwnq1">
 		    <p>
 		        <label for="username">Username</label>
 		        <input id="username" name="username" type="text" placeholder="Type your Username">
@@ -19,7 +19,7 @@
 		    </p>
 		</form>
 		<h1>Compose an Email</h1>
-		<form method="POST" action="http://requestb.in/1m8t6ez1">
+		<form method="POST" action="http://requestb.in/17lwwnq1">
 			<p>
 				<label for="sender">From</label>
 				<input id="email_Send" name="sender" type="text" value="paulqlove@gmail.com">
@@ -45,7 +45,7 @@
 			</p>
 		</form>
 		<h1>Multiple Choice Test</h1>	
-		<form method="Post" action="http://requestb.in/1m8t6ez1">
+		<form method="Post" action="http://requestb.in/17lwwnq1">
 			<p>What is the top speed of a Rhino?</p>
 				<label> 
 					<input type="radio" id="q1a" name="q1" value="30mph">30mph
@@ -101,6 +101,22 @@
 			<p>
 				<button type="Submit" name="submit" value="submitQuiz" >Submit quiz</button>
 			</p>
+			
+				<label for="saidWeek">How many times have you said something inapropriate this week?</label>
+					<select id="saidWeek" name="saidWeek[]" multiple>
+						<option selected value=1>Not once</option>
+						<option value=2>5 or less</option>
+						<option>10 ++</option>
+					</select>
+		</form>
+		<form method="Post" action="http://requestb.in/17lwwnq1">
+			<h1>Select Testing</h1>
+				<label for="Age">Are you older than 21? </label>
+					<select id="Age" name="Age">
+						<option value="1">Yes</option>
+						<option value="0">NO</option>
+					</select>
+				<button type="Submit" name="submit" value="submitQuiz" >Submit </button>
 		</form>
 	</body>
 </html>
