@@ -1,0 +1,51 @@
+h1 {
+	font-size: 20px;
+	color: #5e2f95;
+	font-family: 'helvetica';
+}
+h1:hover{
+	cursor: pointer;
+	color: #ffffff;
+	background-color: #AEE3BA;
+	width: 329px;
+	text-decoration: underline;
+}
+li {
+	border: solid;
+	border-width: 2px;
+	width: 172px;
+	height: 72px;
+	list-style-type: none;
+	margin: 10px 0px;
+	color: #ffffff;
+	border-color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 22px;
+}
+
+#red {
+	background-color: red;
+	
+}
+#orange {
+	background-color: orange;
+	margin-left: 30px;
+}
+#yellow {
+	background-color: yellow;
+	
+	margin-left: 60px;
+}
+#green {
+	background-color: green;
+	margin-left: 90px;
+}
+#blue {
+	background-color: blue;
+	margin-left: 120px;
+}
+#purple {
+	background-color: purple;
+	margin-left: 150px;
+}
