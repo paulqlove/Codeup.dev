@@ -2,6 +2,7 @@ h1 {
 	font-size: 20px;
 	color: #5e2f95;
 	font-family: 'helvetica';
+	margin-left: 40px;
 }
 h1:hover{
 	cursor: pointer;
