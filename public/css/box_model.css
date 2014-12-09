@@ -13,7 +13,7 @@ h1:hover{
 }
 li {
 	border: solid;
-	border-width: 2px;
+	border-width: 1px;
 	width: 172px;
 	height: 72px;
 	list-style-type: none;
