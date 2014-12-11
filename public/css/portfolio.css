@@ -1,0 +1,29 @@
+li {
+	display: inline;
+	list-style: none;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-family: Helvetica ,'Droid Sans' 400;
+	
+
+}
+ a {
+	color: #000;
+
+}
+.container {
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+.navbar-brand{
+	padding-top: 0px;
+	padding-left: 0px;
+}	
+#navBar:hover {
+	
+}
+.jumbotron {
+	padding-top: 0px;
+	
+}
