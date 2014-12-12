@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>uer interface</title>
+</head>
+<body>
+    <script>
+    	// todo: Ask the user for their name.
+//       Keep asking if an empty input is provided.
+			var userName = prompt('What is your name');
+			
+			
+			do{
+					alert("Name is required");
+					var userName = prompt('What is your name');
+
+			}while(userName == null || userName == "");
+			// while(userName == null) {
+			// 	alert("Name is required");
+
+			// }
+			// 	var userName = prompt('What is your name');
+// todo: Show an alert message that welcomes the user based on their input.
+			//var userName = 
+			var useThis = userName;
+// todo: Ask the user if they like pizza.
+		var pizza = prompt('hey ' + useThis + ', do you like pizza?');
+//       Based on their answer tell show a creative alert message. 
+		var likePizza = (pizza == 'yes') ? 'Cool, I like pizza too' : ' Who does not like pizza?';
+		alert(likePizza);
+    </script>
+</body>
+</html>
