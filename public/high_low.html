@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>High Low</title>
+</head>
+<body>
+    <script>
+    	//ask user to input two numbers
+    	var number1 = prompt('please enter a number');
+    	var lowNumber = parseInt(number1);
+    	var number2 = prompt('please enter a second number higher than the first');
+        var highNumber = parseInt(number2);
+       
+          
+    	//randomnize numbers between two user input numbes
+    	console.log(lowNumber);
+    	console.log(highNumber);
+		
+        var random = Math.floor(Math.random()*(highNumber - lowNumber)) + lowNumber;
+        console.log(random);
+        
+
+    	//ask user to guess a number
+        var number3 = prompt('Guess a number between ' + lowNumber + ' and ' + highNumber);
+        var userGuess = parseInt(number3);
+    	//check users number vs computers randomnized number
+           
+           while (userGuess != random){
+               
+                if ( userGuess < random){
+                     alert('You guessed too low');
+                     var number3 = prompt('Guess a number between ' + lowNumber + ' and ' + highNumber);
+                    var userGuess = parseInt(number3);
+
+                     
+                } else if ( userGuess > random){
+                 
+                   alert('You guessed too high');
+                   var number3 = prompt('Guess a number between ' + lowNumber + ' and ' + highNumber);
+                    var userGuess = parseInt(number3);
+                }
+           } 
+           alert('you guessed correctly!');
+           
+
+    	
+    </script>
+</body>
+</html>
