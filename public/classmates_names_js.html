@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<title>
+				iterating arrays
+			</title>
+		</head>
+		<body>
+			<script type="text/javascript"> 
+			var classroom = [
+					'Nicole',
+					'Calvin',
+					'Felice',
+					'David',
+					'Kevin',
+					'Michael',
+					'Stephanie (Beyonce)',
+					'Paul',
+					'Chris',
+					'Jeff',
+					'Marissa',
+					'Travis'
+					];
+
+				//loop through classmates - message " these are my classmates: list"
+				//when you get to your name - message "hey! that's me"
+				//when you get to neighbor  - message " person x helps me!"
+				//message out the rest of the list
+				var myName = 'Paul';
+				var myNeighbor = 'Stephanie (Beyonce)';
+
+				for(i in classroom){
+					if (classroom[i] == myName) {
+						console.log(myName + ': Hey, that is me');
+
+					} 
+					else if (classroom[i] == myNeighbor) {
+						console.log(myNeighbor + ' is my neighbor.');
+					} else {
+						console.log(classroom[i]);
+					}
+				}
+			</script>
+
+		</body>
+	</html>
