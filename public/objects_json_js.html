@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>objecs_ JSon</title>
+</head>
+<body>
+    <script>
+    	// todo:
+// Create an array of objects that represent books.
+
+var movies = [
+	{
+		"title": "The Hobbit: The Battle of Five Armies",
+		"year": 2014,
+		"rating": "pg-13",
+		"length": 144,
+		"metascore": 65,
+		"director": "Peter Jackson",
+		"description": "Bilbo and Company are forced to engage in a war against an array of combatants and keep the terrifying Smaug from acquiring a kingdom of treasure and obliterating all of Middle-Earth."
+	},
+	{
+		"title": "Annie",
+		"year": 2014,
+		"rating": "pg",
+		"length": 118,
+		"metascore": 23,
+		"director": "Will Gluck",
+		"description": "A foster kid, who lives with her mean foster mom, sees her life change when business tycoon and New York mayoral candidate Will Stacks makes a thinly-veiled campaign move and takes her in."
+	},
+	{
+		"title" : "Breakin' 2: Electric Boogaloo",
+		"year" : 1984,
+		"rating" : "pg",
+		"metascore" : 4.8,
+		"director" : "Sam Firstenberg",
+		"description" : "A developer tries to bulldoze a community recreation center. The local breakdancers dance to stop it."
+	},
+	{
+		"title" : "Stand by Me",
+		"year" : 1986,
+		"rating" : "R",
+		"metascore" : 8.1,
+		"director" : "Rob Reiner",
+		"description" : " Watch Corey Feldman before he was riddled with years of drugs abuse."
+	},
+	{
+		"title" : "Howard the Duck",
+		"year" : 1986,
+		"rating" : "pg",
+		"metascore" : 4.6,
+		"director" : "Willard Huyck",
+		"description" :"A sarcastic humanoid duck is pulled from his homeworld to Earth where he must stop an alien invader."
+	}
+
+];
+
+// Title (year) | rating
+// length: 25 | metascore
+// director
+// description
+// ===============================
+
+
+movies.forEach(function(element,index,movies){
+	console.log(element.title + "(" + element.year + ")");
+	console.log("Directed by " + element.director);
+	console.log("description: " + element.description);
+	console.log(" ");
+});
+console.log("=================");
+
+// log out the books array
+console.log(movies);
+
+
+    </script>
+</body>
+</html>
