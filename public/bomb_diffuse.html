@@ -74,9 +74,9 @@
             clearInterval(gameInterval);
             // TODO: Alert "You are a hero! You disarmed the BOM!"
             alert('You are a hero! You disarmed the BOM!');
+            defuseBomb.removeEventListener('click',defuseButtonClick);
         } else {
 
-            defuseBomb.removeEventListener(defuseButtonClick);
 
             // TODO: Generate the random value for the margin-top css property
             var randomTop = Math.floor(Math.random()*100);
@@ -86,18 +86,18 @@
             
             // TODO: If the count is equal or greater than maxCount
             // TODO: Assign the random margin top to the button
-            // buttonThatMoves.style.top = randomTop + '%';
+             buttonThatMoves.style.top = randomTop + '%';
             
-            // // TODO: Assign the random margin left to the button
-            // buttonThatMoves.style.left = randomLeft + '%';
+            // // // TODO: Assign the random margin left to the button
+              buttonThatMoves.style.left = randomLeft + '%';
             
             // TODO: Increment the count by one
         }
     }
-
-    defuseBomb.addEventListener('click', defuseButtonClick, false);
     
     var gameInterval = setInterval(runGame, 1000); 
+
+    defuseBomb.addEventListener('click', defuseButtonClick, false);
     
 
     // var gameInterval = function()
