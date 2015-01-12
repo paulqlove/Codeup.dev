@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery</title>
+	</head>
+	<body>
+		<div>
+			<h1 class="question">Who I am</h1>
+				<p id="name">Paul Love</p>
+			<h1>Testing</h1>
+			<h2 class="question">Where I have been</h2>
+				<p id="places">Mericuh</p>
+			<h2 class="question">Exercise</h2>	
+			<ul>
+				<li>one</li>
+				<li>two</li>
+				<li>three</li>
+			</ul>
+				<script src="/js/jquery.min.js"></script>
+
+				<script type="text/javascript">
+					
+					$('h1').click(function(){
+						$(this).css('background-color', 'green');
+					});
+					
+					$('p').dblclick(function(){
+						$(this).css('font-size','18px');
+					});
+					$('li').hover(
+						function(){
+						$(this).css('color','red');
+
+					},
+						function(){
+						$(this).css('color','#fff');	
+					}
+					);
+				</script>
+		</div>
+	</body>
+</html>
