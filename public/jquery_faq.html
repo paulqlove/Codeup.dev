@@ -5,9 +5,13 @@
 		<style type="text/css">
 			.invisible {
 				display: none;
+
 			}
 			dt {
 				color: blue;
+			}
+			li {
+				font-style: normal;
 			}
 		</style>
 		<!--<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>-->
@@ -16,8 +20,8 @@
 		<h1>10 Facts about Big Bend National Park</h1>
 			<dl>
 				<dt>Fact 1</dt>
-					
-					<dd class="invisible">It is this least traveled park in the United States</dd>
+
+					<dd class="invisible">It is the least traveled park in the United States</dd>
 				<dt>Fact 2</dt>
 					<dd class="invisible">It is over 800,000 acres in size</dd>
 				<dt>Fact 3</dt>
@@ -27,13 +31,36 @@
 				<dt>Fact 5</dt>
 					<dd class="invisible">You can walk to Mexico </dd>
 			</dl>
+
+		<h3 >Yellow Stone National Park</h3>
+			<ul class='yellowStone' >
+				<li>Worlds First National Park</li>
+				<li>Over 2 million acres</li>
+				<li>96 percent is in Wyoming </li>
+				<li>Is an active volcano that is 250,000 years overdue for its next eruption</li>
+			</ul>
+		<h3 >St. John National Park</h3>
+			<ul class='stJohn'>
+				<li>Was owned by the Dutch and bought by the Rockefellers</li>
+				<li>The land was donated to the U.S. with the agreement that it would stay a park</li>
+				<li>The island was mainly used for sugar cane and rum production</li>
+				<li>It's over 15,000 acres</li>
+			</ul>
+			
 			<script src="/js/jquery.min.js"></script>
 			<script>
 				$(document).ready(function(){
-					$("dt").click(function(){
+					
+					//bold on first li in each ul
+					$('ul li:nth-child(1)').css('font-weight','bold');
+					//toggle to hide when clicked on
+					$("dt, h3").click(function(){
 					
 						$(this).next().toggle(".invisible");
+
 					});
+
+					
 				});
 			</script>
 	</body>
